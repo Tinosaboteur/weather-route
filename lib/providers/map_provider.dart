@@ -87,7 +87,7 @@ class MapProvider with ChangeNotifier {
   bool get isOverlayLoading => _isOverlayLoading;
 
   MapProvider() {
-    _googleMapsService = GoogleMapsService("key");
+    _googleMapsService = GoogleMapsService("key ");
   }
 
   final CameraPosition initialCameraPosition = const CameraPosition(
