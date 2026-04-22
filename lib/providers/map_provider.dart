@@ -87,7 +87,7 @@ class MapProvider with ChangeNotifier {
   bool get isOverlayLoading => _isOverlayLoading;
 
   MapProvider() {
-    _googleMapsService = GoogleMapsService("AIzaSyD0vFa-H8Z2HUYOM9-5bWKQl6pngpUjkw0");
+    _googleMapsService = GoogleMapsService("key");
   }
 
   final CameraPosition initialCameraPosition = const CameraPosition(
@@ -826,7 +826,7 @@ class MapProvider with ChangeNotifier {
       notifyListeners();
       return;
     }
-    const apiKey = "AIzaSyD0vFa-H8Z2HUYOM9-5bWKQl6pngpUjkw0";
+    const apiKey = "key";
     final url = 'https://maps.googleapis.com/maps/api/place/autocomplete/json?input=$input&key=$apiKey&language=vi&components=country:vn';
     try {
       final response = await http.get(Uri.parse(url));

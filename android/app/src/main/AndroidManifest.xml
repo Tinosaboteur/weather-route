@@ -18,7 +18,7 @@
         <!-- BƯỚC 2: DI CHUYỂN API KEY RA ĐÂY (TRỰC TIẾP TRONG APPLICATION)   -->
         <!-- =================================================================== -->
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD0vFa-H8Z2HUYOM9-5bWKQl6pngpUjkw0"/>
+            android:value="key"/>
 
 
         <activity
